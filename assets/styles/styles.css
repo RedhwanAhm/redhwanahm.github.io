@@ -204,6 +204,10 @@ footer img {
     padding-bottom: 10px;
 }
 
+.edu-school .comp-date p {
+    display:block;
+}
+
 .wrk-exp-details p, .edu-details p{
     margin-bottom: 10px;
 }
