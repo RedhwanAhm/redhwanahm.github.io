@@ -1,0 +1,733 @@
+/* Color Palette (darkest to lightest)
+#040c14 - color 1 (dark navy)
+#040c14 - color 1 (navy)
+#1153bd - color 2 (blue)
+#82b2ea - color 3 (light cobalt)
+#d7e7fb - color 4 (lighter blue)
+#E0E1DD - color 5 (off white)
+*/
+
+/* Global styles 
+------------------------------------*/
+.fancy-line {
+    background-image: linear-gradient(90deg ,rgb(182, 0, 182), rgb(0, 183, 255));
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 750ms ease;
+}
+
+.fancy-line:hover {
+    background-size: 100% 3px;
+}
+
+body {
+    background-color: #040c14;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #E0E1DD;
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav {
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav-container {
+    width: 350px;
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+}
+
+nav a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #E0E1DD;
+    text-decoration: none;
+    transition: text-shadow 150ms ease, color 150ms ease;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 10px #7acaff;
+    color:#7acaff
+}
+
+nav a:active {
+    text-shadow: 0px 0px 10px #f700ff;
+    color:#f700ff
+}
+
+header {
+    height: 75vh;
+    width: 100vw;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+section {
+    min-height: fit-content;
+    max-height: 100vh;
+    width: 100vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+}
+
+h1,h2,h3,p,ul,li{
+    margin:0;
+    padding:0;
+    display: block;
+    
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1153bd;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #82b2ea;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #d7e7fb;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+header img {
+    z-index: 0;
+    width: 300px;
+    position: absolute;
+    top: 190px;
+    left: calc(60% - 150px);
+    
+}
+
+footer img {
+    display: inline-block;
+    width: 20px;
+}
+
+.point {
+    height: 5px;
+    width: 5px;
+    background-color: #95c0dd;
+    display: inline-block;
+    margin: 3px 8px;
+    border-radius: 5px;
+
+}
+
+
+/* Header & Footer 
+------------------------------------*/
+.head-wrapper {
+    width: 300px;
+    text-align: left;
+    padding: 10px 15px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    z-index: 1;
+}
+
+.head-wrapper h2 {
+    margin-bottom: 10px;
+}
+
+
+/* Work Experience & Education
+------------------------------------*/
+.wrk-exp {
+    margin-bottom: 50px;
+}
+.wrk-exp, .edu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrk-exp h2, .edu h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+.wrk-exp-wrapper, .edu-wrapper {
+    text-align: center;
+    width: 275px;
+    padding: 20px;
+    background-color: #0b1127;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.wrk-exp-company, .edu-school {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+.wrk-exp-company p, .edu-school p, .edu-school ul > li{
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.comp-date {
+    border-bottom: #E0E1DD 3px solid;
+    padding-bottom: 10px;
+}
+
+.wrk-exp-details p, .edu-details p{
+    margin-bottom: 10px;
+}
+
+.wrk-exp-details p:last-child, .edu-details p:last-child {
+    margin-bottom: 0;
+}
+
+/* Education (specific)
+------------------------------------*/
+.edu {
+    justify-content: center;
+    align-items: center;
+}
+
+.edu-details p:first-child {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Footer (specific)
+------------------------------------*/
+footer h2 {
+    margin-bottom: 5px;
+}
+footer div {
+    display:flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+/* Media Queries:
+------------------------------------*/
+@media only screen and (min-width: 450px) {
+
+    header {
+        height: 90vh;
+        width: 100vw;
+    }
+    
+    h1 {
+        font-size: 1.7rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    p {
+        font-size: 1.1rem;
+    }
+    
+    header img {
+        z-index: 0;
+        width: 400px;
+        top: 230px;
+        left: calc(100% - 450px);
+        
+    }
+    
+    .point {
+        height: 5px;
+        width: 5px;
+        background-color: #95c0dd;
+        display: inline-block;
+        margin: 3px 8px;
+        border-radius: 5px;
+    
+    }
+    
+    
+    /* Header & Footer 
+    ------------------------------------*/
+    .head-wrapper {
+        width: 75%;
+        max-width: 500px;
+        text-align: left;
+        padding: 10px 15px;
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        z-index: 1;
+    }
+    
+    .head-wrapper h2 {
+        margin-bottom: 10px;
+    }
+    
+    
+    /* Work Experience & Education
+    ------------------------------------*/
+    .wrk-exp-wrapper, .edu-wrapper {
+        text-align: center;
+        width: 75%;
+        max-width: 450px;
+        padding: 20px;
+        background-color: #0b1127;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    
+    .wrk-exp-company p, .edu-school p, .edu-school ul > li{
+        display: inline-block;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    /* Education (specific)
+    ------------------------------------*/
+    
+    .edu-details p:first-child {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    
+    /* Footer (specific)
+    ------------------------------------*/
+    footer h2 {
+        margin-bottom: 5px;
+    }
+    footer div {
+        display:flex;
+        justify-content: space-between;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    
+    footer img {
+        display: inline-block;
+        width: 25px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 95vh;
+        width: 100vw;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+    
+    header img {
+        z-index: 0;
+        width: 500px;
+        top: 175px;
+        left: 10%;
+        right: 90%;
+        
+    }
+
+    .head-wrapper {
+        width: 75%;
+        max-width: 500px;
+        text-align: right;
+        padding: 10px 15px;
+        position: absolute;
+        left: calc(85% - 450px);
+        top: 50px;
+        z-index: 1;
+    }
+    
+    .head-wrapper h2 {
+        margin-bottom: 10px;
+    }
+
+    .wrk-exp-wrapper, .edu-wrapper {
+        text-align: center;
+        width: 75%;
+        max-width: 550px;
+        padding: 20px;
+        background-color: #0b1127;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    
+    .wrk-exp-company p, .edu-school p, .edu-school ul > li{
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    /* Education (specific)
+    ------------------------------------*/
+    
+    .edu-details p:first-child {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    footer img {
+        display: inline-block;
+        width: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    header {
+        height: fit-content;
+        width: 100vw;
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 2.7rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.7rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+    }
+    
+    header img {
+        position:static;
+        align-self: center;
+        margin-right: 600px;
+        z-index: 1;
+    }
+
+    .head-wrapper {
+       text-align: left;
+       top: 200px;
+       left: 45%;
+       z-index: 0;
+    }
+    
+    .head-wrapper h2 {
+        margin-bottom: 10px;
+    }
+
+    .wrk-exp-wrapper, .edu-wrapper {
+        text-align: center;
+        width: 75%;
+        max-width: 850px;
+        padding: 20px;
+        background-color: #0b1127;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    
+    .wrk-exp-company p, .edu-school p, .edu-school ul > li{
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    /* Education (specific)
+    ------------------------------------*/
+    
+    .edu-details p:first-child {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    footer img {
+        display: inline-block;
+        width: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        height: 100vh;
+    }
+
+    .head-wrapper {
+        position:absolute;
+        left: 50%;
+        top: 35vh;
+    }
+
+    header img {
+        position: absolute;
+        top: 15vh;
+        left: 5%;
+        width: 600px;
+        margin:0;
+
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.3rem;
+    }
+    
+    h3 {
+        font-size: 1.9rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+    .wrk-exp-company p, .edu-school p, .edu-school ul > li{
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    /* Education (specific)
+    ------------------------------------*/
+    
+    .edu-details p:first-child {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .head-wrapper {
+        text-align: center;
+        background: linear-gradient(143deg, rgba(158,0,255,1) 0%, rgba(9,9,121,1) 49%, rgba(0,212,255,1) 100%);
+        height: 400px;
+        min-width: 575px;
+        padding: 7px;
+        border-radius: 15px;
+    }
+
+    .inner-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 395px;
+        min-width: 575px;
+        padding-bottom: 5px;
+        background-color: #040c14;
+        border-radius: 10px;
+    }
+
+    .wrk-exp, .edu {
+        flex-direction: row;
+        justify-content:center;
+        margin-bottom: 15px;
+    }
+
+    .wrk-exp h2 {
+        align-self: flex-start;
+        width: 215px;
+        text-align: left;
+        border-bottom: #82b2ea 3px solid;
+        padding-bottom: 8px;
+        margin: 50px;
+    }
+
+    .edu h2 {
+        align-self: flex-start;
+        width: 200px;
+        text-align: left;
+        border-bottom: #82b2ea 3px solid;
+        padding-bottom: 8px;
+        margin: 50px;
+    }
+
+    .wrk-exp-wrapper {
+        display: flex;
+        width: 470px;
+        height: 550px;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        padding: 40px;
+    }
+
+    .wrk-exp-details, .edu-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: inherit;
+    }
+
+    .wrk-exp-company {
+        align-self: flex-start
+    }
+
+    .edu {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .edu-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 65%;
+        max-width: 1060px;
+        padding: 40px;
+    }
+
+    .edu-school {
+        margin: 0 0 20px 0;
+    }
+
+    .edu-details {
+        align-items: center;
+    }
+
+    .edu-details {
+        width: fit-content;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media only screen and (min-width: 1400px) { 
+
+        .head-wrapper {
+            top: 35vh;
+            left: 48%;
+        }
+
+        header img {
+            top: 15vh;
+            left: 13%;
+        }
+
+    }
+
+    @media only screen and (min-width: 1600px) { 
+        .head-wrapper {
+            top: 35vh;
+            left: 48%;
+        }
+
+        header img {
+            top: 15vh;
+            left: 13%;
+        }
+        
+    }
+
+    @media only screen and (min-width: 1800px) { 
+        p {
+            font-size: 1.3rem;
+        }
+
+        header img {
+            width: 650px;
+            top: 15vh;
+            left: 17%;
+        }
+
+        header p {
+            width: 450px;
+        }
+
+        .head-wrapper {
+            height: 450px;
+            min-width: 600px;
+            top: 30vh;
+            left: 50%;
+        }
+
+        .inner-wrapper {
+            height: 445px;
+            min-width: 595px;
+        }
+
+        .wrk-exp-company p, .edu-school p, .edu-school ul > li{
+            display: inline-block;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        
+        .edu-details p:first-child {
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+    }
+
+    @media only screen and (min-width: 2200px) { 
+        header img {
+            width: 700px;
+            top: 10vh;
+            left: 20%;
+        }
+    }
+
+    @media only screen and (min-width: 4300px) { 
+        header img {
+            width: 750px;
+            top: 10vh;
+            left: 40%;
+        }
+
+        .head-wrapper {
+            height: 450px;
+            min-width: 600px;
+            top: 30vh;
+            left: 55%;
+        }
+    }
+
+}
