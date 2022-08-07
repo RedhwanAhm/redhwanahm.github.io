@@ -1,16 +1,16 @@
-/* Color Palette (darkest to lightest)
-#040c14 - color 1 (dark navy)
-#040c14 - color 1 (navy)
-#1153bd - color 2 (blue)
-#82b2ea - color 3 (light cobalt)
-#d7e7fb - color 4 (lighter blue)
-#E0E1DD - color 5 (off white)
+/* 
+    #00BFFF: Sky Blue
+    #0080FF: Cobalt
+    #0040FF: Blue
+    #8000FF: Purple
+    #BF00FF: Purple Pink
+    #FF00FF: Pink
 */
 
 /* Global styles 
 ------------------------------------*/
 .fancy-line {
-    background-image: linear-gradient(90deg ,rgb(182, 0, 182), rgb(0, 183, 255));
+    background-image: linear-gradient(90deg ,#FF00FF, #00BFFF);
     background-size: 0% 3px;
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -54,22 +54,22 @@ nav a{
 }
 
 nav a:hover {
-    text-shadow: 0px 0px 10px #7acaff;
-    color:#7acaff
+    text-shadow: 0px 0px 10px #00BFFF;
+    color:#00BFFF;
 }
 
 nav a:active {
     text-shadow: 0px 0px 10px #f700ff;
-    color:#f700ff
+    color:#f700ff;
 }
 
 header {
-    height: 75vh;
+    height: 85vh;
     width: 100vw;
 }
 
 header h1 {
-    margin-bottom: 5px;
+    height: 27.5px;
 }
 
 section {
@@ -96,24 +96,28 @@ h1,h2,h3,p,ul,li{
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    color: #1153bd;
+    color: #FF00FF;
     font-size: 1.5rem;
     font-weight: 900;
+    text-shadow: 0px 0px 10px #ff00ff97;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
-    color: #82b2ea;
+    color: #0080FF;
     font-weight: 700;
     font-style: italic;
     font-size: 1.3rem;
+    text-shadow: 0px 0px 10px #00bfffa4;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #d7e7fb;
+    color: #86bef6;
     font-weight: 700;
     font-size: 1.1rem;
+    margin-bottom: 5px;
+    text-shadow: 0px 0px 7.5px #60afff;
 }
 
 p {
@@ -149,11 +153,11 @@ footer img {
 ------------------------------------*/
 .head-wrapper {
     width: 300px;
-    text-align: left;
+    text-align: right;
     padding: 10px 15px;
     position: absolute;
     left: 20px;
-    top: 120px;
+    top: 100px;
     z-index: 1;
 }
 
@@ -248,6 +252,11 @@ footer div {
         height: 90vh;
         width: 100vw;
     }
+
+    header h1 {
+        height: 27.5px;
+    }
+    
     
     h1 {
         font-size: 1.7rem;
@@ -289,10 +298,10 @@ footer div {
     .head-wrapper {
         width: 75%;
         max-width: 500px;
-        text-align: left;
+        text-align: right;
         padding: 10px 15px;
         position: absolute;
-        left: 20px;
+        left: 60px;
         top: 125px;
         z-index: 1;
     }
@@ -351,6 +360,10 @@ footer div {
     header {
         height: 95vh;
         width: 100vw;
+    }
+
+    header h1 {
+        height: 32.5px;
     }
     
     h1 {
@@ -432,6 +445,11 @@ footer div {
         flex-direction: column-reverse;
         align-items: center;
     }
+
+    header h1 {
+        height: 45px;
+    }
+    
     
     h1 {
         font-size: 2.7rem;
@@ -547,11 +565,12 @@ footer div {
 
     .head-wrapper {
         text-align: center;
-        background: linear-gradient(143deg, rgba(158,0,255,1) 0%, rgba(9,9,121,1) 49%, rgba(0,212,255,1) 100%);
+        background: linear-gradient(143deg, #FF00FF 0%, rgba(9,9,121,1) 49%, rgba(0,212,255,1) 100%);
         height: 400px;
         min-width: 575px;
         padding: 7px;
         border-radius: 15px;
+        z-index: 0;
     }
 
     .inner-wrapper {
@@ -569,30 +588,30 @@ footer div {
     .wrk-exp, .edu {
         flex-direction: row;
         justify-content:center;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .wrk-exp h2 {
         align-self: flex-start;
         width: 215px;
         text-align: left;
-        border-bottom: #82b2ea 3px solid;
+        border-bottom: #0080FF 3px solid;
         padding-bottom: 8px;
         margin: 50px;
     }
 
     .edu h2 {
         align-self: flex-start;
-        width: 200px;
+        width: 215px;
         text-align: left;
-        border-bottom: #82b2ea 3px solid;
+        border-bottom: #0080FF 3px solid;
         padding-bottom: 8px;
         margin: 50px;
     }
 
     .wrk-exp-wrapper {
         display: flex;
-        width: 470px;
+        width: 500px;
         height: 550px;
         align-items: center;
         flex-direction: column;
@@ -615,14 +634,16 @@ footer div {
     .edu {
         align-items: flex-start;
         justify-content: center;
+        margin-bottom: 50px;
     }
 
     .edu-wrapper{
         display: flex;
         justify-content: center;
         width: 65%;
-        max-width: 1060px;
+        max-width: 1120px;
         padding: 40px;
+        margin: 20px;
     }
 
     .edu-school {
@@ -643,6 +664,11 @@ footer div {
         width: fit-content;
         justify-content: center;
         align-items: center;
+    }
+
+    .inner-wrapper p {
+        margin-bottom: 7.5px;
+        width: 85%;
     }
 
     @media only screen and (min-width: 1400px) { 
@@ -690,7 +716,7 @@ footer div {
         .head-wrapper {
             height: 450px;
             min-width: 600px;
-            top: 30vh;
+            top: 33vh;
             left: 50%;
         }
 
