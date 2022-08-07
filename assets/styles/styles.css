@@ -156,7 +156,7 @@ footer img {
     text-align: right;
     padding: 10px 15px;
     position: absolute;
-    left: 20px;
+    right: 10px;
     top: 100px;
     z-index: 1;
 }
