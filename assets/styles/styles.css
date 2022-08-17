@@ -39,14 +39,14 @@ nav {
 }
 
 nav .nav-container {
-    width: 350px;
+    width: 325px;
     text-align: center;
     display:flex;
     justify-content: space-around;
 }
 
 nav a{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #E0E1DD;
     text-decoration: none;
@@ -148,6 +148,13 @@ footer img {
 
 }
 
+strong {
+    color: #95c0dd;
+}
+
+.ip {
+    color: #62adf7;
+}
 
 /* Header & Footer 
 ------------------------------------*/
@@ -528,7 +535,7 @@ footer div {
     header img {
         position: absolute;
         top: 15vh;
-        left: 5%;
+        left: 6%;
         width: 600px;
         margin:0;
 
@@ -693,7 +700,7 @@ footer div {
 
         header img {
             top: 15vh;
-            left: 13%;
+            left: 16%;
         }
         
     }
@@ -706,7 +713,7 @@ footer div {
         header img {
             width: 650px;
             top: 15vh;
-            left: 17%;
+            left: 19%;
         }
 
         header p {
@@ -741,7 +748,7 @@ footer div {
         header img {
             width: 700px;
             top: 10vh;
-            left: 20%;
+            left: 23%;
         }
     }
 
