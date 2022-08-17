@@ -46,7 +46,11 @@ nav .nav-container {
 }
 
 nav a{
+<<<<<<< HEAD
     font-size: 1.1rem;
+=======
+    font-size: 1rem;
+>>>>>>> bb7b7358758c3d8aea8390c94ab6bfa77e861fec
     font-weight: bold;
     color: #E0E1DD;
     text-decoration: none;
@@ -121,15 +125,15 @@ h3 {
 }
 
 p {
-    font-size: 0.9rem;
+    font-size: 0.80rem;
 }
 
 header img {
     z-index: 0;
     width: 300px;
     position: absolute;
-    top: 250px;
-    left: calc(60% - 150px);
+    top: 210px;
+    left: 10%;
     
 }
 
@@ -164,7 +168,7 @@ strong {
     padding: 10px 15px;
     position: absolute;
     right: 10px;
-    top: 100px;
+    top: 80px;
     z-index: 1;
 }
 
@@ -256,7 +260,7 @@ footer div {
 @media only screen and (min-width: 450px) {
 
     header {
-        height: 90vh;
+        height: 100vh;
         width: 100vw;
     }
 
@@ -278,14 +282,14 @@ footer div {
     }
     
     p {
-        font-size: 1.1rem;
+        font-size: 0.80rem;s
     }
     
     header img {
         z-index: 0;
         width: 400px;
-        top: 320px;
-        left: calc(100% - 450px);
+        top: 265px;
+        left: 5%;
         
     }
     
@@ -308,8 +312,8 @@ footer div {
         text-align: right;
         padding: 10px 15px;
         position: absolute;
-        left: 60px;
-        top: 125px;
+        right: 10px;
+        top: 100px;
         z-index: 1;
     }
     
@@ -365,7 +369,7 @@ footer div {
 
 @media only screen and (min-width: 768px) {
     header {
-        height: 95vh;
+        height: 100vh;
         width: 100vw;
     }
 
@@ -386,15 +390,14 @@ footer div {
     }
     
     p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     header img {
         z-index: 0;
-        width: 500px;
-        top: 350px;
+        width: 450px;
+        top: 275px;
         left: 10%;
-        right: 90%;
         
     }
 
@@ -405,7 +408,7 @@ footer div {
         padding: 10px 15px;
         position: absolute;
         left: calc(85% - 450px);
-        top: 200px;
+        top: 125px;
         z-index: 1;
     }
     
@@ -471,7 +474,7 @@ footer div {
     }
     
     p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     header img {
@@ -529,13 +532,18 @@ footer div {
     .head-wrapper {
         position:absolute;
         left: 50%;
-        top: 35vh;
+        top: 30vh;
     }
 
     header img {
         position: absolute;
+<<<<<<< HEAD
         top: 15vh;
         left: 6%;
+=======
+        top: 5vh;
+        left: 5%;
+>>>>>>> bb7b7358758c3d8aea8390c94ab6bfa77e861fec
         width: 600px;
         margin:0;
 
@@ -681,12 +689,12 @@ footer div {
     @media only screen and (min-width: 1400px) { 
 
         .head-wrapper {
-            top: 35vh;
+            top: 30vh;
             left: 48%;
         }
 
         header img {
-            top: 15vh;
+            top: 5vh;
             left: 13%;
         }
 
@@ -694,13 +702,18 @@ footer div {
 
     @media only screen and (min-width: 1600px) { 
         .head-wrapper {
-            top: 35vh;
+            top: 30vh;
             left: 48%;
         }
 
         header img {
+<<<<<<< HEAD
             top: 15vh;
             left: 16%;
+=======
+            top: 5vh;
+            left: 13%;
+>>>>>>> bb7b7358758c3d8aea8390c94ab6bfa77e861fec
         }
         
     }
@@ -712,8 +725,13 @@ footer div {
 
         header img {
             width: 650px;
+<<<<<<< HEAD
             top: 15vh;
             left: 19%;
+=======
+            top: 5vh;
+            left: 17%;
+>>>>>>> bb7b7358758c3d8aea8390c94ab6bfa77e861fec
         }
 
         header p {
@@ -723,7 +741,7 @@ footer div {
         .head-wrapper {
             height: 450px;
             min-width: 600px;
-            top: 33vh;
+            top: 30vh;
             left: 50%;
         }
 
@@ -747,15 +765,20 @@ footer div {
     @media only screen and (min-width: 2200px) { 
         header img {
             width: 700px;
+<<<<<<< HEAD
             top: 10vh;
             left: 23%;
+=======
+            top: 5vh;
+            left: 20%;
+>>>>>>> bb7b7358758c3d8aea8390c94ab6bfa77e861fec
         }
     }
 
     @media only screen and (min-width: 4300px) { 
         header img {
             width: 750px;
-            top: 10vh;
+            top: 5vh;
             left: 40%;
         }
 
