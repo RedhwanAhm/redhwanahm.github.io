@@ -46,11 +46,7 @@ nav .nav-container {
 }
 
 nav a{
-<<<<<<< HEAD
-    font-size: 1.1rem;
-=======
     font-size: 1rem;
->>>>>>> bb7b7358758c3d8aea8390c94ab6bfa77e861fec
     font-weight: bold;
     color: #E0E1DD;
     text-decoration: none;
@@ -282,7 +278,7 @@ footer div {
     }
     
     p {
-        font-size: 0.80rem;s
+        font-size: 0.80rem;
     }
     
     header img {
@@ -537,13 +533,8 @@ footer div {
 
     header img {
         position: absolute;
-<<<<<<< HEAD
         top: 15vh;
         left: 6%;
-=======
-        top: 5vh;
-        left: 5%;
->>>>>>> bb7b7358758c3d8aea8390c94ab6bfa77e861fec
         width: 600px;
         margin:0;
 
@@ -694,8 +685,8 @@ footer div {
         }
 
         header img {
-            top: 5vh;
-            left: 13%;
+            top: 15vh;
+            left: 12%;
         }
 
     }
@@ -707,13 +698,8 @@ footer div {
         }
 
         header img {
-<<<<<<< HEAD
             top: 15vh;
             left: 16%;
-=======
-            top: 5vh;
-            left: 13%;
->>>>>>> bb7b7358758c3d8aea8390c94ab6bfa77e861fec
         }
         
     }
@@ -725,13 +711,9 @@ footer div {
 
         header img {
             width: 650px;
-<<<<<<< HEAD
             top: 15vh;
             left: 19%;
-=======
-            top: 5vh;
-            left: 17%;
->>>>>>> bb7b7358758c3d8aea8390c94ab6bfa77e861fec
+
         }
 
         header p {
@@ -765,13 +747,9 @@ footer div {
     @media only screen and (min-width: 2200px) { 
         header img {
             width: 700px;
-<<<<<<< HEAD
             top: 10vh;
             left: 23%;
-=======
-            top: 5vh;
-            left: 20%;
->>>>>>> bb7b7358758c3d8aea8390c94ab6bfa77e861fec
+
         }
     }
 
