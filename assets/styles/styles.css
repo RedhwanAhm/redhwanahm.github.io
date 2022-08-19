@@ -247,7 +247,7 @@ footer h2 {
 footer div {
     display:flex;
     justify-content: space-between;
-    width: inherit;
+    width: 200px;
     margin-bottom: 30px;
 }
 
