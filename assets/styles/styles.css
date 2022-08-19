@@ -242,14 +242,16 @@ strong {
 /* Footer (specific)
 ------------------------------------*/
 footer h2 {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 footer div {
     display:flex;
     justify-content: space-between;
-    width: 200px;
+    width: inherit;
     margin-bottom: 30px;
 }
+
+
 
 /* Media Queries:
 ------------------------------------*/
@@ -516,7 +518,13 @@ footer div {
     }
     footer img {
         display: inline-block;
-        width: 30px;
+        width: 45px;
+    }
+    footer div {
+        width: 330px;
+    }
+    footer h2 {
+        margin-bottom: 15px;
     }
 }
 
@@ -571,7 +579,7 @@ footer div {
 
     .head-wrapper {
         text-align: center;
-        background: linear-gradient(143deg, #FF00FF 0%, rgba(9,9,121,1) 49%, rgba(0,212,255,1) 100%);
+        background: linear-gradient(143deg, #FF00FF 0%, rgba(9,9,121,1) 49%, #00d4ff 100%);
         height: 400px;
         min-width: 575px;
         padding: 7px;
@@ -676,96 +684,106 @@ footer div {
         margin-bottom: 7.5px;
         width: 85%;
     }
+    footer img {
+        display: inline-block;
+        width: 45px;
+    }
+    footer div {
+        width: 330px;
+    }
+    footer h2 {
+        margin-bottom: 15px;
+    }
+}
 
-    @media only screen and (min-width: 1400px) { 
+@media only screen and (min-width: 1400px) { 
 
-        .head-wrapper {
-            top: 30vh;
-            left: 48%;
-        }
-
-        header img {
-            top: 15vh;
-            left: 12%;
-        }
-
+    .head-wrapper {
+        top: 30vh;
+        left: 48%;
     }
 
-    @media only screen and (min-width: 1600px) { 
-        .head-wrapper {
-            top: 30vh;
-            left: 48%;
-        }
-
-        header img {
-            top: 15vh;
-            left: 16%;
-        }
-        
-    }
-
-    @media only screen and (min-width: 1800px) { 
-        p {
-            font-size: 1.3rem;
-        }
-
-        header img {
-            width: 650px;
-            top: 15vh;
-            left: 19%;
-
-        }
-
-        header p {
-            width: 450px;
-        }
-
-        .head-wrapper {
-            height: 450px;
-            min-width: 600px;
-            top: 30vh;
-            left: 50%;
-        }
-
-        .inner-wrapper {
-            height: 445px;
-            min-width: 595px;
-        }
-
-        .wrk-exp-company p, .edu-school p, .edu-school ul > li{
-            display: inline-block;
-            font-size: 1.3rem;
-            font-weight: bold;
-        }
-        
-        .edu-details p:first-child {
-            font-weight: bold;
-            font-size: 1.3rem;
-        }
-    }
-
-    @media only screen and (min-width: 2200px) { 
-        header img {
-            width: 700px;
-            top: 10vh;
-            left: 23%;
-
-        }
-    }
-
-    @media only screen and (min-width: 4300px) { 
-        header img {
-            width: 750px;
-            top: 5vh;
-            left: 40%;
-        }
-
-        .head-wrapper {
-            height: 450px;
-            min-width: 600px;
-            top: 30vh;
-            left: 55%;
-        }
+    header img {
+        top: 15vh;
+        left: 12%;
     }
 
 }
+
+@media only screen and (min-width: 1600px) { 
+    .head-wrapper {
+        top: 30vh;
+        left: 48%;
+    }
+
+    header img {
+        top: 15vh;
+        left: 16%;
+    }
+    
+}
+
+@media only screen and (min-width: 1800px) { 
+    p {
+        font-size: 1.3rem;
+    }
+
+    header img {
+        width: 650px;
+        top: 15vh;
+        left: 19%;
+
+    }
+
+    header p {
+        width: 450px;
+    }
+
+    .head-wrapper {
+        height: 450px;
+        min-width: 600px;
+        top: 30vh;
+        left: 50%;
+    }
+
+    .inner-wrapper {
+        height: 445px;
+        min-width: 595px;
+    }
+
+    .wrk-exp-company p, .edu-school p, .edu-school ul > li{
+        display: inline-block;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .edu-details p:first-child {
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 2200px) { 
+    header img {
+        width: 700px;
+        top: 10vh;
+        left: 23%;
+
+    }
+}
+
+@media only screen and (min-width: 4300px) { 
+    header img {
+        width: 750px;
+        top: 5vh;
+        left: 40%;
+    }
+
+    .head-wrapper {
+        height: 450px;
+        min-width: 600px;
+        top: 30vh;
+        left: 55%;
+    }
+}
+
