@@ -1,13 +1,7 @@
-# My resume website
+# My resume website!
 
-Hiya! This is my first effort in making a nice resume website! To view it visit https://redhwanahm.github.io!
+Hi! This is my attempt at making a fun little resume website. I'll be constantly updating it as life progresses. Thank you for viewing it! Please take inspiration from it if you wish to!
 
-ヽ(๏∀๏ )ﾉ
+Peace,
 
-## ← index.html
-
-Where you'll write the content of your website. 
-
-## ← styles.css
-
-CSS files add styling rules to your content
+Redhwan
