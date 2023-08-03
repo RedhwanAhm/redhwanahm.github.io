@@ -305,6 +305,9 @@ footer div {
         border-radius: 5px;
     
     }
+
+        
+    
     
     
     /* Header & Footer 
@@ -662,7 +665,7 @@ footer div {
         width: 65%;
         max-width: 1120px;
         padding: 40px;
-        margin: 20px;
+        margin: 0px;
     }
 
     .edu-school {
